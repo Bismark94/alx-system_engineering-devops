@@ -1,3 +1,2 @@
 #!/bin/bash
-hexadecimal-$(print "%X\n" "$DECIMAL")
-echo "$hexadecimal"
+echo "obase=16; $DECIMAL" | bc
